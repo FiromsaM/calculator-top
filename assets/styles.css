@@ -1,0 +1,75 @@
+body {
+  background-color: rgb(94, 76, 76);
+  color: white;
+}
+
+#container {
+  width: 400px;
+  margin: 10vh auto 0 auto;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+}
+
+#display input {
+  width: 98%;
+  background-color: black;
+  color: white;
+  font-size: 80px;
+  text-align: right;
+  border: none;
+}
+#display input::placeholder {
+  color: white;
+  font-size: 80px;
+}
+
+#btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#btn-container button {
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 50%;
+  flex: 1 0 23%;
+  background-color: rgb(39, 39, 39);
+  color: rgb(238, 238, 239);
+  font-size: 35px;
+  border: none;
+}
+
+#btn-container .zero {
+  padding: 10px;
+  border-radius: 20px;
+  text-align: left;
+  flex: 1 0 46%;
+}
+
+#btn-container button:hover {
+  background-color: rgb(22, 22, 22);
+  color: rgb(240, 240, 240);
+}
+#btn-container .top-color {
+  background-color: rgb(150, 150, 150);
+  color: rgb(30, 30, 30);
+}
+
+#btn-container .top-color:hover {
+  background-color: rgb(129, 129, 129);
+  color: rgb(30, 30, 30);
+}
+
+#btn-container .right-color {
+  background-color: rgb(238, 132, 9);
+  color: rgb(252, 249, 191);
+}
+
+#btn-container .right-color:hover {
+  background-color: rgb(213, 117, 7);
+  color: rgb(252, 249, 191);
+}
