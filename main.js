@@ -11,7 +11,6 @@ function handleButtonClicks(buttons, display) {
       let target = e.target.value
 
       if (target !== undefined) {
-        // display.value += target
         operate(target)
       }
     })
@@ -27,7 +26,6 @@ let arrOper = ['/', '*', '+', '-', '%', '+/-']
 //if its an operator we need to store the operator in a separate variable, also store the numbers of the first variable in the second variable, and finally set the first digit to being empty
 //if the operator that's return is = check to see that num1,num2, & operator have values if so execute the switch statement
 function operate(userInput) {
-  // console.log(display.value)
   let total = 0
 
   //stops consecutive operators from being entered
@@ -39,7 +37,6 @@ function operate(userInput) {
 
     return display.value.slice(-1)
   }
-  // console.log(userInput)
 
   if (userInput === 'AC') {
     reset()
@@ -136,10 +133,6 @@ function operate(userInput) {
 handleButtonClicks(btn, display)
 
 function add(num1, num2) {
-  // console.log(`${num1} ${num2}`)
-  // console.log(typeof num2)
-  // console.log(typeof num1)
-  // console.log(num1 + num2)
   return round(num1 + num2, 2)
 }
 
